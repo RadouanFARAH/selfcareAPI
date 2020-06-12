@@ -1,4 +1,4 @@
 module.exports = {
     jwtSecret: 'long-live-the-selfcare-team',
-    db: 'mongodb://localhost:27017/selfcareDB'
+    db: 'mongodb+srv://selfcare:selfcare@selfcareappdatabase-tp6va.mongodb.net/<dbname>?retryWrites=true&w=majority'
 };

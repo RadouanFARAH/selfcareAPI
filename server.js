@@ -28,8 +28,8 @@ app.use(passport.initialize());
 passport.use(passportMiddleware);
  
 // Demo Route (GET http://localhost:5000)
-app.get('/', function(req, res) {
-  return res.send('Hello! The API is at http://localhost:' + port + '/api');
+app.get('/', (req, res) => {
+    res.send('Hello! The API is at ' + '/api');
 });
  
 var routes = require('./routes/routes');
@@ -48,6 +48,5 @@ connection.on('error', (err) => {
     process.exit();
 });
  
-// Start the server
 app.listen(port);
-console.log('There will be dragons: http://localhost:' + port);
+console.log('There will be dragons');
