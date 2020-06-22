@@ -66,6 +66,19 @@ var UserSchema = new mongoose.Schema({
         type: String,
         required: false
     },
+    profileImage:{
+        type : {
+            originalname : {
+                type : String,
+                required : true
+            },
+            path:{
+                type : String,
+                required : true
+            }
+        },
+        required:false
+    }
 
 });
 

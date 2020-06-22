@@ -53,7 +53,7 @@ exports.loginUser = (req, res) => {
         }
 
         if (!user) {
-            return res.status(400).json({ 'msg': 'les donnees sont incorrects' });
+            return res.status(400).json({ 'msg': 'les donnees sont incorrects 1' });
         }
 
         user.comparePassword(req.body.password, (err, isMatch) => {
@@ -62,7 +62,7 @@ exports.loginUser = (req, res) => {
                     token: createToken(user)
                 });
             } else {
-                return res.status(400).json({ msg: 'les donnees sont incorrects' });
+                return res.status(400).json({ msg: 'les donnees sont incorrects 2' });
             }
         });
     });

@@ -6,9 +6,9 @@ var config      = require('./config/config');
 var port        = process.env.PORT || 5000; 
 var cors        = require('cors');
 var passportMiddleware = require('./middleware/passport');
-
  
 var app = express();
+app.use(express.static('uploads'));
 app.use(cors());
  
 // get our request parameters
